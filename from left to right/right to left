@@ -1,0 +1,27 @@
+text = input("Enter the text : ")
+newleft = ""
+i = 0
+for char in text:
+    upper = char.upper()
+    lower = char.lower()
+    if lower not in newleft and upper not in newleft:
+  
+     newleft += char
+    i += 1
+   
+print(newleft)
+
+    
+
+newright = ""
+length = len(text)
+i = length-1
+for char in reversed(text):
+    upper = char.upper()
+    lower = char.lower()
+    if lower not in newright and upper not in newright:
+  
+     newright += char
+    i += 1
+    
+print(newright[::-1])
